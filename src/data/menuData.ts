@@ -2,7 +2,7 @@ import { Dish } from '../types/menu';
 
 export const menuItems: Dish[] = [
   {
-    id: '1',
+    id: 'guacamole-fresco',
     name: 'Guacamole Fresco',
     description:
       'Fresh avocados mixed with lime, cilantro, onions, and tomatoes, served with warm tortilla chips',
@@ -13,7 +13,7 @@ export const menuItems: Dish[] = [
     spicyLevel: 1,
   },
   {
-    id: '2',
+    id: 'sopa-tortilla',
     name: 'Sopa de Tortilla',
     description:
       'Traditional Mexican soup with crispy tortilla strips, avocado, and cheese',
@@ -24,7 +24,7 @@ export const menuItems: Dish[] = [
     spicyLevel: 1,
   },
   {
-    id: '3',
+    id: 'enchiladas-rojas',
     name: 'Enchiladas Rojas',
     description:
       'Three corn tortillas filled with chicken, topped with red chile sauce and melted cheese',
@@ -35,7 +35,7 @@ export const menuItems: Dish[] = [
     spicyLevel: 2,
   },
   {
-    id: '4',
+    id: 'churros-chocolate',
     name: 'Churros con Chocolate',
     description:
       'Crispy cinnamon-sugar coated churros served with warm chocolate sauce',
@@ -46,7 +46,7 @@ export const menuItems: Dish[] = [
     allergens: ['gluten'],
   },
   {
-    id: '5',
+    id: 'margarita-clasica',
     name: 'Margarita Clásica',
     description:
       'Classic lime margarita with premium tequila and fresh-squeezed lime juice',
@@ -56,7 +56,7 @@ export const menuItems: Dish[] = [
       'https://images.unsplash.com/photo-1631503190221-0f6a15367926?auto=format&fit=crop&q=80&w=600',
   },
   {
-    id: '6',
+    id: 'camarones-diabla',
     name: 'Camarones a la Diabla',
     description:
       'Shrimp in an extra spicy red chile sauce, served with rice and lime',

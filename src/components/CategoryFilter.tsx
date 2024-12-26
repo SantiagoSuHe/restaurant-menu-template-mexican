@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLanguage } from '../hooks/useLanguage';
 import { DishCategory } from '../types/menu';
 
 interface CategoryFilterProps {
@@ -10,6 +11,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   selectedCategory,
   onCategoryChange,
 }) => {
+  const { t } = useLanguage();
   const categories: (DishCategory | 'all')[] = [
     'all',
     'appetizers',
@@ -32,7 +34,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
         >
-          {category.charAt(0).toUpperCase() + category.slice(1).replace('-', ' ')}
+          {t.categories[category]}
         </button>
       ))}
     </div>

@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import { Utensils } from 'lucide-react';
 import { DishCard } from './components/DishCard';
 import { CategoryFilter } from './components/CategoryFilter';
+import { LanguageSwitch } from './components/LanguageSwitch';
 import { menuItems } from './data/menuData';
+import { useLanguage } from './hooks/useLanguage';
 import { DishCategory } from './types/menu';
 
 function App() {
+  const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<DishCategory | 'all'>('all');
 
   const filteredDishes = menuItems.filter(
@@ -16,9 +19,12 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center gap-2">
-            <Utensils className="h-8 w-8 text-green-600" />
-            <h1 className="text-3xl font-bold text-gray-900">El Sabor Mexicano</h1>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Utensils className="h-8 w-8 text-green-600" />
+              <h1 className="text-3xl font-bold text-gray-900">{t.title}</h1>
+            </div>
+            <LanguageSwitch />
           </div>
         </div>
       </header>
