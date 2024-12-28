@@ -9,7 +9,7 @@ export const menuItems: Dish[] = [
     category: 'appetizers',
     price: 12.99,
     imageUrl:
-      'https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&q=80&w=600',
+      'https://brandsitesplatform-res.cloudinary.com/image/fetch/w_auto:100,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_auto,e_sharpen:85/https://assets.brandplatform.generalmills.com%2F-%2Fmedia%2Fproject%2Fgmi%2Foldelpaso%2Foldelpaso-us%2Frecipes%2Fufgsytw5keimh7nvghyetg_gmi_hi_res_jpeg.jpeg%3F',
     spicyLevel: 1,
   },
   {
@@ -20,7 +20,7 @@ export const menuItems: Dish[] = [
     category: 'soups',
     price: 9.99,
     imageUrl:
-      'https://images.unsplash.com/photo-1562059390-a761a084768e?auto=format&fit=crop&q=80&w=600',
+      'https://www.unileverfoodsolutions.com.mx/dam/global-ufs/mcos/NOLA/calcmenu/recipes/MX-recipes/general/sopa-de-tortilla/main-header.jpg',
     spicyLevel: 1,
   },
   {
@@ -31,7 +31,7 @@ export const menuItems: Dish[] = [
     category: 'main-courses',
     price: 18.99,
     imageUrl:
-      'https://images.unsplash.com/photo-1534352956036-cd81e27dd615?auto=format&fit=crop&q=80&w=600',
+      'https://www.vvsupremo.com/wp-content/uploads/2016/02/900X570_Red-Enchiladas-Suizas.jpg',
     spicyLevel: 2,
   },
   {
@@ -53,7 +53,7 @@ export const menuItems: Dish[] = [
     category: 'drinks',
     price: 11.99,
     imageUrl:
-      'https://images.unsplash.com/photo-1631503190221-0f6a15367926?auto=format&fit=crop&q=80&w=600',
+      'https://peopleenespanol.com/thmb/f-W91ejdX_Zv1mir2ZP5TyW-pcc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/margarita-clasica-2000-43c81720c1504881a8082233ed66f02d.jpg',
   },
   {
     id: 'camarones-diabla',
