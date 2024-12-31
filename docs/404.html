@@ -11,9 +11,14 @@
   <body>
     <div id="root"></div>
     <script>
-      // Redirigir a la ruta correcta
+      // Redirigir a la ruta correcta según el idioma del navegador
+      const userLang = navigator.language || navigator.userLanguage;
       if (location.pathname !== '/') {
-        location.replace('/#' + location.pathname);
+        if (userLang.startsWith('es')) {
+          location.replace('/es' + location.pathname);
+        } else {
+          location.replace('/en' + location.pathname);
+        }
       }
     </script>
   </body>
