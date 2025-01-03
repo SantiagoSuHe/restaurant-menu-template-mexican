@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template 4 Menu Now</title>
+    <script type="module" crossorigin src="./assets/index-DsR1o7Fj.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BKbKYXy7.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Redirigir a la ruta correcta según el idioma del navegador
+      const userLang = navigator.language || navigator.userLanguage;
+      if (location.pathname !== '/') {
+        if (userLang.startsWith('es')) {
+          location.replace('/es' + location.pathname);
+        } else {
+          location.replace('/en' + location.pathname);
+        }
+      } 
+    </script>
+  </body>
+</html>
