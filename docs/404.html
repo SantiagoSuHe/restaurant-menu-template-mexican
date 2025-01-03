@@ -13,7 +13,7 @@
     <script>
       // Redirigir a la ruta correcta según el idioma del navegador
       const userLang = navigator.language || navigator.userLanguage;
-      if (location.pathname !== '/') {
+      if (location.pathname !== '/' && !location.pathname.startsWith('/en') && !location.pathname.startsWith('/es')) {
         if (userLang.startsWith('es')) {
           location.replace('/es' + location.pathname);
         } else {
